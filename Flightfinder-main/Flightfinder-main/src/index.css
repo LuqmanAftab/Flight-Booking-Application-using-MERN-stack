@@ -1,0 +1,90 @@
+/* ✈️ Animated airplane */
+.airplane {
+  position: fixed;
+  top: 120px;
+  left: -150px;
+  width: 80px;
+  height: auto;
+  z-index: 0;
+  animation: flyAirplane 30s linear infinite;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+@keyframes flyAirplane {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(120vw) rotate(5deg);
+    opacity: 0;
+  }
+}
+body {
+  background: linear-gradient(to bottom, #87ceeb, #e0f7fa);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Allow vertical scroll, block horizontal */
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* Sky container */
+.sky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Cartoon cloud style */
+.cloud {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  box-shadow:
+    40px 10px white,
+    80px 10px white,
+    60px -10px white,
+    20px -10px white;
+  animation: floatCloud linear infinite;
+}
+
+.cloud1 {
+  top: 50px;
+  left: -300px;
+  animation-duration: 60s;
+}
+.cloud2 {
+  top: 150px;
+  left: -400px;
+  animation-duration: 90s;
+}
+.cloud3 {
+  top: 250px;
+  left: -350px;
+  animation-duration: 75s;
+}
+
+@keyframes floatCloud {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200vw);
+  }
+}

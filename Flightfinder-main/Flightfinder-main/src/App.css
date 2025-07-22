@@ -1,0 +1,69 @@
+/* Root container: Remove fixed width & center alignment */
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+
+
+/* Body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  border-radius: 0;
+}
+
+/* Flight Cards */
+.card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  width: 100%;
+  max-width: 300px;
+  flex: 1 1 auto;
+}
+
+/* Buttons */
+button, .btn {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding: 1rem 0;
+  background-color: #212529;
+  color: white;
+}
+
+/* Responsive Flight List Layout */
+.flight-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.fullscreen-bg {
+  background-image: url('https://images.unsplash.com/photo-1504198453319-5ce911bafcde'); /* or your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
